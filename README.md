@@ -19,11 +19,15 @@ I don't know.
 
 ## Endpoints
 
-    /here
+    /json
+
+This will return Shajith's current status
+
+    /here.json
 
 This will set Shajith's current status to here.
 
-    /gone
+    /gone.json
 
 This will set Shajith's current status to gone.
 
