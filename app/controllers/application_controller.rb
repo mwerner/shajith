@@ -21,7 +21,10 @@ class ApplicationController < ActionController::Base
       @@status = 'No'
     end
 
-    redirect_to root_url
+    respond_to do |format|
+      format.html{ redirect_to root_url }
+      format.json{ render text: 'OK' }
+    end
   end
 
   protected

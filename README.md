@@ -6,6 +6,17 @@ I don't know.
 
     https://shajith.herokuapp.com/
 
+## Example
+
+    $ curl https://shajith.herokuapp.com/json
+    {"status":"Yes"}
+
+    $ curl https://shajith.herokuapp.com/gone.json
+    OK
+
+    $ curl https://shajith.herokuapp.com/json
+    {"status":"No"}
+
 ## Endpoints
 
     /here
