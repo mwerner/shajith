@@ -22,8 +22,8 @@ class ApplicationController < ActionController::Base
     end
 
     respond_to do |format|
-      format.html{ redirect_to root_url }
-      format.json{ render text: 'OK' }
+      format.html{ redirect_to root_path }
+      format.json{ render json: { result: 'OK' } }
     end
   end
 
@@ -31,7 +31,7 @@ class ApplicationController < ActionController::Base
 
   def require_status
     return unless params[:status].blank?
-    redirect_to root_url
+    redirect_to root_path
   end
 
   def current_status
