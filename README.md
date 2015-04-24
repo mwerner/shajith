@@ -12,7 +12,7 @@ I don't know.
     {"status":"Yes"}
 
     $ curl https://shajith.herokuapp.com/gone.json
-    OK
+    {"result":"OK"}
 
     $ curl https://shajith.herokuapp.com/json
     {"status":"No"}
@@ -21,7 +21,7 @@ I don't know.
 
     /json
 
-This will return Shajith's current status
+This will return Shajith's current status as json, keyed by `status`
 
     /here.json
 
